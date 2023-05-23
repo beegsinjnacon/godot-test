@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://yickwtl361xg"]
+
+[ext_resource type="Script" path="res://Controller.gd" id="1_fbhkn"]
+[ext_resource type="PackedScene" uid="uid://nne4sc3msv7" path="res://Camera.tscn" id="2_a5l6s"]
+
+[node name="Controller" type="Node3D"]
+script = ExtResource("1_fbhkn")
+
+[node name="Camera" parent="." instance=ExtResource("2_a5l6s")]
+
+[node name="ControlledUnit" type="Node3D" parent="."]

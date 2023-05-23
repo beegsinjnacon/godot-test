@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://ww7h8plnt13f"]
+
+[ext_resource type="PackedScene" uid="uid://0h35sfmwi1ok" path="res://map_shittysr.blend" id="1_opj2h"]
+[ext_resource type="Texture2D" uid="uid://dwi3fhrgy6s7p" path="res://addons/kenney_prototype_textures/dark/texture_13.png" id="2_hpw8l"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_njq0h"]
+albedo_texture = ExtResource("2_hpw8l")
+uv1_scale = Vector3(50, 50, 50)
+uv1_triplanar = true
+
+[node name="map_shittysr" instance=ExtResource("1_opj2h")]
+
+[node name="Plane" parent="." index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_njq0h")
