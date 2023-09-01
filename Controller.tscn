@@ -1,7 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://yickwtl361xg"]
+[gd_scene load_steps=5 format=3 uid="uid://yickwtl361xg"]
 
 [ext_resource type="Script" path="res://Controller.gd" id="1_fbhkn"]
 [ext_resource type="PackedScene" uid="uid://nne4sc3msv7" path="res://Camera.tscn" id="2_a5l6s"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p2w5p"]
+bg_color = Color(0.145098, 0.0666667, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yalu0"]
+bg_color = Color(0, 0.552941, 0.223529, 1)
 
 [node name="Controller" type="Node3D"]
 script = ExtResource("1_fbhkn")
@@ -9,3 +15,39 @@ script = ExtResource("1_fbhkn")
 [node name="Camera" parent="." instance=ExtResource("2_a5l6s")]
 
 [node name="ControlledUnit" type="Node3D" parent="."]
+
+[node name="HUD" type="CanvasLayer" parent="."]
+visible = false
+follow_viewport_enabled = true
+
+[node name="PanelContainer" type="PanelContainer" parent="HUD"]
+offset_left = 307.0
+offset_top = 544.0
+offset_right = 834.0
+offset_bottom = 648.0
+
+[node name="VSplitContainer" type="VSplitContainer" parent="HUD/PanelContainer"]
+layout_mode = 2
+
+[node name="Abilities" type="HBoxContainer" parent="HUD/PanelContainer/VSplitContainer"]
+layout_mode = 2
+
+[node name="PrimaryButton" type="TextureButton" parent="HUD/PanelContainer/VSplitContainer/Abilities"]
+layout_mode = 2
+
+[node name="SecondaryButton" type="TextureButton" parent="HUD/PanelContainer/VSplitContainer/Abilities"]
+layout_mode = 2
+
+[node name="UtilityButton" type="TextureButton" parent="HUD/PanelContainer/VSplitContainer/Abilities"]
+layout_mode = 2
+
+[node name="MobilityButton" type="TextureButton" parent="HUD/PanelContainer/VSplitContainer/Abilities"]
+layout_mode = 2
+
+[node name="UltimateButton" type="TextureButton" parent="HUD/PanelContainer/VSplitContainer/Abilities"]
+layout_mode = 2
+
+[node name="HealthBar" type="ProgressBar" parent="HUD/PanelContainer/VSplitContainer"]
+layout_mode = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_p2w5p")
+theme_override_styles/fill = SubResource("StyleBoxFlat_yalu0")

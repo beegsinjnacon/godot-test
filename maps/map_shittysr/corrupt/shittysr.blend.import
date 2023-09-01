@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://0h35sfmwi1ok"
-path="res://.godot/imported/map_shittysr.blend-33cf40544b6a3533d248c8f5eaa04683.scn"
+uid="uid://bnqvnmpy3i1gk"
+path="res://.godot/imported/shittysr.blend-8ac14171cb0b4e26fdf51ae851887234.scn"
 
 [deps]
 
-source_file="res://map_shittysr.blend"
-dest_files=["res://.godot/imported/map_shittysr.blend-33cf40544b6a3533d248c8f5eaa04683.scn"]
+source_file="res://maps/map_shittysr/corrupt/shittysr.blend"
+dest_files=["res://.godot/imported/shittysr.blend-8ac14171cb0b4e26fdf51ae851887234.scn"]
 
 [params]
 

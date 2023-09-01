@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://ccfn5v8l60f7f"]
+
+[ext_resource type="Script" path="res://maps/map_shittysr/shittysr.gd" id="1_rl0ae"]
+[ext_resource type="PackedScene" uid="uid://c1k4ffo5t30l5" path="res://maps/map_shittysr/map_shittysr.blend" id="2_w2u43"]
+
+[node name="shittysr" type="Node3D"]
+script = ExtResource("1_rl0ae")
+
+[node name="map_shittysr" parent="." instance=ExtResource("2_w2u43")]

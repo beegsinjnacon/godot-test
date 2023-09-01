@@ -1,16 +1,38 @@
-[gd_scene load_steps=4 format=3 uid="uid://clkr8obyotwcq"]
+[gd_scene load_steps=2 format=3 uid="uid://clkr8obyotwcq"]
 
-[ext_resource type="PackedScene" uid="uid://ww7h8plnt13f" path="res://map_shittysr.tscn" id="1_28aj7"]
 [ext_resource type="Script" path="res://root.gd" id="1_eolsr"]
-[ext_resource type="PackedScene" uid="uid://yickwtl361xg" path="res://Controller.tscn" id="2_a0cm8"]
 
 [node name="Root" type="Node3D"]
 script = ExtResource("1_eolsr")
 
-[node name="map_shittysr" parent="." instance=ExtResource("1_28aj7")]
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.258819, 0.965926, 0, -0.965926, 0.258819, 0, 58, 5)
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.323
+anchor_top = 0.253
+anchor_right = 0.625
+anchor_bottom = 0.64
+offset_left = -0.0960083
+offset_top = 0.0559845
+offset_bottom = 0.279968
 
-[node name="Controller" parent="." instance=ExtResource("2_a0cm8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.9776, 11.0782, -62.7153)
+[node name="Title" type="Label" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+text = "hi welcome to my game"
+
+[node name="map_select" type="MenuButton" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+text = "Select map"
+
+[node name="char_select" type="MenuButton" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+text = "Select Character"
+
+[node name="summon_select" type="MenuButton" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+text = "Select summon"
+
+[node name="start_button" type="Button" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+text = "start teh game"

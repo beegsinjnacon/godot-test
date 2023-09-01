@@ -1,0 +1,13 @@
+#lines starting with # will be ignored
+#yes this file is based on newlines
+#
+#order dont matter but prob dont have empty lines
+#
+#map name
+name=Shitty SR
+#
+#thumbnail for map select
+thumb=shittysrthumb.png
+#
+#this should point to the tscn file to load
+path=shittysr.tscn

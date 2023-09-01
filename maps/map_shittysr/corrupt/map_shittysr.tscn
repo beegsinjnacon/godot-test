@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://ww7h8plnt13f"]
+
+[ext_resource type="Texture2D" uid="uid://dwi3fhrgy6s7p" path="res://addons/kenney_prototype_textures/dark/texture_13.png" id="1_pij7x"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_njq0h"]
+albedo_texture = ExtResource("1_pij7x")
+uv1_scale = Vector3(50, 50, 50)
+uv1_triplanar = true
+
+[node name="map_shittysr"]
+
+[node name="Plane" parent="." index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_njq0h")

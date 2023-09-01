@@ -1,12 +1,13 @@
 [gd_scene load_steps=4 format=3 uid="uid://b1f31gvu56y4u"]
 
+[ext_resource type="Script" path="res://unit.gd" id="1_gt18m"]
 [ext_resource type="PackedScene" uid="uid://d4av0knlirbw3" path="res://unit.blend" id="1_iyp3n"]
-[ext_resource type="Script" path="res://Unit.gd" id="1_lfxae"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_q0xeb"]
 
 [node name="Unit" type="CharacterBody3D"]
-script = ExtResource("1_lfxae")
+axis_lock_linear_y = true
+script = ExtResource("1_gt18m")
 
 [node name="Unit" parent="." instance=ExtResource("1_iyp3n")]
 
